@@ -115,6 +115,10 @@ public class Interfaz extends javax.swing.JFrame implements NewInterface {
         BotonOr = new javax.swing.JButton();
         BotonNot = new javax.swing.JButton();
         Panel = new javax.swing.JPanel();
+        BotonNand = new javax.swing.JButton();
+        BotonNor = new javax.swing.JButton();
+        BotonXor1 = new javax.swing.JButton();
+        BotonXnor = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -153,16 +157,52 @@ public class Interfaz extends javax.swing.JFrame implements NewInterface {
             .addGap(0, 423, Short.MAX_VALUE)
         );
 
+        BotonNand.setText("NAND");
+        BotonNand.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BotonNandActionPerformed(evt);
+            }
+        });
+
+        BotonNor.setText("NOR");
+        BotonNor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BotonNorActionPerformed(evt);
+            }
+        });
+
+        BotonXor1.setText("XOR");
+        BotonXor1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BotonXor1ActionPerformed(evt);
+            }
+        });
+
+        BotonXnor.setText("XNOR");
+        BotonXnor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BotonXnorActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(296, 296, 296)
+                .addGap(49, 49, 49)
                 .addComponent(BotonAnd)
-                .addGap(123, 123, 123)
+                .addGap(74, 74, 74)
+                .addComponent(BotonNand)
+                .addGap(73, 73, 73)
                 .addComponent(BotonOr)
-                .addGap(152, 152, 152)
+                .addGap(59, 59, 59)
+                .addComponent(BotonNor)
+                .addGap(55, 55, 55)
+                .addComponent(BotonXor1)
+                .addGap(57, 57, 57)
+                .addComponent(BotonXnor)
+                .addGap(62, 62, 62)
                 .addComponent(BotonNot)
                 .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
@@ -177,7 +217,11 @@ public class Interfaz extends javax.swing.JFrame implements NewInterface {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(BotonAnd)
                     .addComponent(BotonOr)
-                    .addComponent(BotonNot))
+                    .addComponent(BotonNot)
+                    .addComponent(BotonNand)
+                    .addComponent(BotonNor)
+                    .addComponent(BotonXor1)
+                    .addComponent(BotonXnor))
                 .addGap(18, 18, 18)
                 .addComponent(Panel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
@@ -215,6 +259,22 @@ public class Interfaz extends javax.swing.JFrame implements NewInterface {
         agregarCompuerta(new Not(0, 0));
 
     }//GEN-LAST:event_BotonNotActionPerformed
+
+    private void BotonNandActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonNandActionPerformed
+        agregarCompuerta(new Nand(0, 0));        // TODO add your handling code here:
+    }//GEN-LAST:event_BotonNandActionPerformed
+
+    private void BotonNorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonNorActionPerformed
+        agregarCompuerta(new Nor(0, 0));      // TODO add your handling code here:
+    }//GEN-LAST:event_BotonNorActionPerformed
+
+    private void BotonXor1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonXor1ActionPerformed
+        agregarCompuerta(new Xor(0, 0));        // TODO add your handling code here:
+    }//GEN-LAST:event_BotonXor1ActionPerformed
+
+    private void BotonXnorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonXnorActionPerformed
+        agregarCompuerta(new Xnor(0, 0));        // TODO add your handling code here:
+    }//GEN-LAST:event_BotonXnorActionPerformed
     public void paint(Graphics g) {
         super.paint(g);
         Graphics2D gr = (Graphics2D) Panel.getGraphics();
@@ -260,8 +320,12 @@ public class Interfaz extends javax.swing.JFrame implements NewInterface {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BotonAnd;
+    private javax.swing.JButton BotonNand;
+    private javax.swing.JButton BotonNor;
     private javax.swing.JButton BotonNot;
     private javax.swing.JButton BotonOr;
+    private javax.swing.JButton BotonXnor;
+    private javax.swing.JButton BotonXor1;
     private javax.swing.JPanel Panel;
     // End of variables declaration//GEN-END:variables
 

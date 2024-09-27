@@ -24,11 +24,19 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="296" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
               <Component id="BotonAnd" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="123" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="74" max="-2" attributes="0"/>
+              <Component id="BotonNand" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="73" max="-2" attributes="0"/>
               <Component id="BotonOr" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="152" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="59" max="-2" attributes="0"/>
+              <Component id="BotonNor" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="55" max="-2" attributes="0"/>
+              <Component id="BotonXor1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="57" max="-2" attributes="0"/>
+              <Component id="BotonXnor" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="62" max="-2" attributes="0"/>
               <Component id="BotonNot" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
           </Group>
@@ -47,6 +55,10 @@
                   <Component id="BotonAnd" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="BotonOr" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="BotonNot" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="BotonNand" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="BotonNor" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="BotonXor1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="BotonXnor" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Component id="Panel" min="-2" max="-2" attributes="0"/>
@@ -105,5 +117,37 @@
         </DimensionLayout>
       </Layout>
     </Container>
+    <Component class="javax.swing.JButton" name="BotonNand">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="NAND"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BotonNandActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="BotonNor">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="NOR"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BotonNorActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="BotonXor1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="XOR"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BotonXor1ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="BotonXnor">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="XNOR"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BotonXnorActionPerformed"/>
+      </Events>
+    </Component>
   </SubComponents>
 </Form>
