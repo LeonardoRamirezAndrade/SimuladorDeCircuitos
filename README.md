@@ -12,7 +12,6 @@ El objetivo principal es proporcionar una herramienta interactiva que permita a�
 Este simulador es útil para la enseñanza y aprendizaje de circuitos lógicos, proporcionando una representación visual de cómo interactúan las compuertas en un circuito.
 
 Colaboradores principales:
-- **Gonzales Lauren**
 - **Ramirez Andrade Leonardo**
 - **Ramos Mateo**
 - **Torres Kevin**
